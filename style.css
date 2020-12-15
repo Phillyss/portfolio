@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Retroica";
+    src: url(fonts/Retroica.ttf);
+  }
+
+body {
+    text-align: center;
+    font-family: Retroica;
+    perspective: 1000px;
+}
+
+
+/* -- Nav -- */
+nav {
+    height: 10vh;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav ul {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    list-style: none;
+}
+
+nav li+li {
+    margin-left: 2em;
+}
+
+
+
+/* -- General -- */
+h1 {
+    color: white;
+}
+
+p {
+    font-size: 25px;
+}
+
+
+
+
+/* --- Homepage --- */
+#homepage {
+    background-color: #fcd412;
+}
+
+#homepage h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    color: black;
+}
+
+#homepage div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+}
+
+#homepage img {
+    width: 40%;
+}
