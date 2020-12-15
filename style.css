@@ -66,13 +66,14 @@ nav a:hover::before {
 nav a.active {
     color: white;
     font-size: 30px;
+    transition: .5s ease-in-out;
 }
 
 nav a.active::before {
     background-color: black;
     visibility: visible;
     transform: scaleX(1);
-    transition: none;
+    transition: all 0.4s ease-in-out 0s;
 }
 
 nav a.active:hover::before {
