@@ -30,7 +30,7 @@ nav ul {
     width: 100%;
     display: flex;
     justify-content: center;
-
+    align-items: baseline;
     list-style: none;
 }
 
@@ -61,6 +61,26 @@ nav a::before {
 nav a:hover::before {
     visibility: visible;
     transform: scaleX(1);
+}
+
+nav a.active {
+    color: white;
+    font-size: 30px;
+}
+
+nav a.active::before {
+    background-color: black;
+    visibility: visible;
+    transform: scaleX(1);
+    transition: none;
+}
+
+nav a.active:hover::before {
+    background-color: white;
+}
+
+nav a.active:hover {
+    color: black;
 }
 
 
