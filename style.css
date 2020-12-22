@@ -7,17 +7,59 @@
 @font-face {
     font-family: "Retroica";
     src: url(fonts/Retroica.ttf);
-  }
-
-  html {
-      scroll-behavior: smooth;
-  }
+}
 
 body {
     text-align: center;
     font-family: Retroica;
     perspective: 1000px;
+    background-color: #fcd412;
 }
+
+
+
+
+/* -- General -- */
+section {
+    position: relative;
+}
+
+h1 {
+    color: black;
+    font-size: 50px;
+    text-transform: uppercase;
+
+    margin-top: 50px;
+}
+
+h2 {
+    color: rgba(30, 30, 30, 1);
+    font-size: 42px;
+    font-weight: normal;
+    line-height: 120%;
+    max-width: 800px;
+    margin: auto auto;
+}
+
+p {
+    color: rgba(30, 30, 30, 1);
+    font-size: 22px;
+    line-height: 140%;
+    margin-top: 3vh;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(30, 30, 30, 1);
+    transition: .2s;
+}
+
+a:hover {
+    color: #fcd412;
+}
+
+
+
 
 
 /* -- Nav -- */
@@ -43,9 +85,12 @@ nav li+li {
 }
 
 nav a {
-    text-decoration: none;
-    color: black;
     position: relative;
+    color: black;
+}
+
+nav a:hover {
+    color: black;
 }
 
 /* Hover underline animation */
@@ -91,35 +136,6 @@ nav a.active:hover {
 
 
 
-/* -- General -- */
-section {
-    position: relative;
-}
-
-h1 {
-    color: black;
-    font-size: 50px;
-    text-transform: uppercase;
-}
-
-h2 {
-    color: rgba(30, 30, 30, 1);
-    font-size: 42px;
-    font-weight: normal;
-    line-height: 120%;
-    max-width: 800px;
-    margin: auto auto;
-}
-
-p {
-    color: rgba(30, 30, 30, 1);
-    font-size: 22px;
-    line-height: 140%;
-    margin-top: 3vh;
-}
-
-
-
 /* -- Footer -- */
 footer section:first-of-type {
     height: 460px; 
@@ -140,7 +156,7 @@ footer h2 {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    transition: all ease-out 0.6s;
+    transition: all ease-out .7s;
 
     color: rgba(190, 190, 190, 1);
     font-size: 100px;
@@ -150,19 +166,30 @@ footer h2.foot {
     transform: translateY(210px);
 }
 
+footer ul {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    max-width: 80%;
+
+    display: flex;
+    justify-content: space-between;
+
+    list-style: none;
+}
+
 
 
 /* --- Homepage --- */
-#homepage {
-    background-color: #fcd412;
-}
-
 #homepage h1 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     letter-spacing: .15em;
+    margin-top: 0;
 }
 
 #homepage div {
