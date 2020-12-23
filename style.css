@@ -22,6 +22,10 @@ body {
 /* -- General -- */
 section {
     position: relative;
+    margin: 0 auto 200px auto;
+    display: flex;
+    width: 1200px;
+    max-width: 90%;
 }
 
 h1 {
@@ -37,8 +41,7 @@ h2 {
     font-size: 42px;
     font-weight: normal;
     line-height: 120%;
-    max-width: 800px;
-    margin: auto auto;
+    margin: 0 auto 20px auto;
 }
 
 p {
@@ -56,6 +59,11 @@ a {
 
 a:hover {
     color: #fcd412;
+}
+
+img {
+    width: 600px;
+    max-width: 50%;
 }
 
 
@@ -137,12 +145,12 @@ nav a.active:hover {
 
 
 /* -- Footer -- */
-footer section:first-of-type {
+footer div:first-of-type {
     height: 460px; 
     background-color: rgba(240, 240, 240 , 1);
 }
 
-footer section:nth-of-type(2) {
+footer div:nth-of-type(2) {
     position: absolute;
     bottom: -50px;
     left: 0;
@@ -192,6 +200,11 @@ footer ul {
     margin-top: 0;
 }
 
+#homepage h2 {
+    max-width: 800px;
+    margin: auto auto;
+}
+
 #homepage div {
     display: flex;
     justify-content: center;
@@ -204,9 +217,38 @@ footer ul {
     width: 40%;
 }
 
-#homepage main section+section {
+#homepage section {
+    width: 100%;
+    margin-bottom: 0;
+    display: block;
+}
+
+#homepage section+section {
     margin-top: 15vh;
     margin-bottom: 35vh;
 }
 
 
+
+
+/* --- Web Dev & Concept Design --- */
+.projects div {
+    width: 50%;
+}
+
+.projects p {
+    margin: auto auto;
+    width: 90%;
+}
+
+.projects a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.projects section:first-of-type {
+    margin-top: 50px;
+}

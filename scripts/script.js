@@ -21,14 +21,12 @@ function takeTransition() {
     img.style.transition = "none";
 }
 
-container.addEventListener("mousemove", animateImg);
-container.addEventListener("mouseleave", resetImg);
-container.addEventListener("mouseenter", takeTransition);
+
 
 
 
 // Footer animation
-var footer = document.querySelector("footer section:last-of-type");
+var footer = document.querySelector("footer div:last-of-type");
 var footerH2 = document.querySelector("footer h2");
 
 window.onscroll = function(ev) {
@@ -41,4 +39,13 @@ window.onscroll = function(ev) {
         footerH2.classList.add("foot");
     }
 };
+
+
+
+
+
+// Homepage
+container.addEventListener("mousemove", animateImg);
+container.addEventListener("mouseleave", resetImg);
+container.addEventListener("mouseenter", takeTransition);
 
