@@ -258,7 +258,7 @@ footer p {
     margin-top: 50px;
 }
 
-#kyanite a {
+#kyanite a, #ding {
     display: block;
     position: unset;
     width: unset;
@@ -269,6 +269,6 @@ footer p {
     text-decoration: underline;
 }
 
-#kyanite a:hover {
+#kyanite a:hover, #ding:hover {
     color: white;
 }
