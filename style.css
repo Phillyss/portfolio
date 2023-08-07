@@ -5,7 +5,7 @@
 }
 
 @font-face {
-	font-family: 'Retroica';
+	font-family: "Retroica";
 	src: url(fonts/Retroica.ttf);
 }
 
@@ -23,6 +23,11 @@ section {
 	display: flex;
 	width: 1200px;
 	max-width: 90%;
+	transition: 0.4s;
+}
+
+.scale section:hover {
+	transform: scale(1.02);
 }
 
 h1 {
@@ -96,7 +101,7 @@ nav a:hover {
 
 /* Hover underline animation */
 nav a::before {
-	content: '';
+	content: "";
 	position: absolute;
 	bottom: 0;
 	left: 0;
