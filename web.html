@@ -1,117 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Philip van Egmond" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Web Development</title>
+		<link href="style.css" rel="stylesheet" />
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="author" content="Philip van Egmond" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Web Development</title>
-	<link href="style.css" rel="stylesheet" />
-</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Intro</a></li>
+					<li><a href="web.html" class="active">Web Development</a></li>
+					<li><a href="game.html">Game Development</a></li>
+					<li><a href="concept.html">Concept Design</a></li>
+				</ul>
+			</nav>
+		</header>
 
-<body>
-	<header>
-		<nav>
-			<ul>
-				<li><a href="index.html">Intro</a></li>
-				<li><a href="web.html" class="active">Web Development</a></li>
-				<li><a href="game.html">Game Development</a></li>
-				<li><a href="concept.html">Concept Design</a></li>
-			</ul>
-		</nav>
-	</header>
+		<main class="projects scale">
+			<h1>Projects</h1>
 
-	<main class="projects">
-		<h1>Projects</h1>
+			<section>
+				<img src="images/arlibrary.jpg" />
+				<div>
+					<h2>AR Library</h2>
+					<p>
+						A fully functioning Augmented Reality web application I designed and
+						developed for the HvA Robot Lab. Solo internship project.<br />
+						<br />
+						The Robot Lab needed a convenient place to store the 3D assets they
+						produce with their students. Using phones, these 3D assets should be
+						showcasable in AR. <br />
+						<br />
+						Only accessible to HvA staff and students. Users are able to upload
+						3D files, name them, tag them, etc. Uploads can be filtered through
+						tags like materials or projects. Detail pages show additional
+						information and a button to launch an AR view.
+					</p>
+				</div>
+			</section>
 
-		<section>
-			<img src="images/gamebuddyHome.jpg" />
+			<section>
+				<div>
+					<h2>GameBuddy</h2>
+					<p>
+						A matching web application designed to make new friends with similar
+						gaming interests. Create an account, select your favourite games,
+						find and favourite other people! <br />
+						<br />
+						My first backend web development project. Runs on an Express server
+						with EJS templating and a MongoDB database. <br />
+						<br />
+						The backend part I mainly developed was the favourite feature and
+						making sure these people don't show up in your feed again. I also
+						wrote image compression for profile pictures.
+					</p>
+				</div>
+				<img src="images/gamebuddyHome.jpg" />
+				<a
+					href="https://github.com/AsaMarjew/GameBuddy/wiki"
+					target="_blank"
+				></a>
+			</section>
+
+			<section>
+				<img src="images/shhht.jpg" />
+				<div>
+					<h2>Shhht</h2>
+					<p>
+						An effort to solve sound polution in Amsterdam's city centre using
+						digital advertisement boards.<br />
+						<br />
+						An audio-reactive particle system using Canvas and Web Audio API.
+					</p>
+				</div>
+				<a href="shhht/index.html" target="_blank"></a>
+			</section>
+
+			<section>
+				<div>
+					<h2>Jacob Collier</h2>
+					<p>
+						A duplicate made of Jacob Collier's website. Fully responsive, with
+						changing themes and interactive Javascript. <br />
+						<br />
+						This school project was focused solely on front-end. Remaking a
+						website takes away the time you'd spend designing.
+					</p>
+				</div>
+				<img src="images/jacob.jpg" />
+				<a
+					href="https://philipvegmond.github.io/Frontend-Website/"
+					target="_blank"
+				></a>
+			</section>
+
+			<section>
+				<img src="images/horus.jpg" />
+				<div>
+					<h2>Escape Room</h2>
+					<p>
+						A digital escape room. Collect items and solve puzzles to escape the
+						temple you got stuck exploring! <br />
+						<br />
+						My first Javascript based school project.
+					</p>
+				</div>
+				<a
+					href="https://oege.ie.hva.nl/~egmondp/Escape_Room_Update/"
+					target="_blank"
+				></a>
+			</section>
+		</main>
+
+		<footer>
 			<div>
-				<h2>GameBuddy</h2>
-				<p>
-					A matching web application designed to make new friends with similar
-					gaming interests. Create an account, select your favourite games,
-					find and favourite other people! <br />
-					<br />
-					My first backend web development project. Runs on an Express server
-					with EJS templating and a MongoDB database. <br />
-					<br />
-					The backend part I mainly developed was the favourite feature and
-					making sure these people don't show up in your feed again. I also
-					wrote image compression for profile pictures.
-				</p>
+				<h2 class="foot">Contact</h2>
 			</div>
-			<a href="https://github.com/AsaMarjew/GameBuddy/wiki" target="_blank"></a>
-		</section>
-
-		<section>
 			<div>
-				<h2>Jacob Collier</h2>
-				<p>
-					A duplicate made of Jacob Collier's website. Fully responsive, with
-					changing themes and interactive Javascript. <br />
-					<br />
-					This school project was focused solely on front-end. Remaking a
-					website takes away the time you'd spend designing.
-				</p>
+				<ul>
+					<li>
+						<a
+							href="https://www.linkedin.com/in/philip-van-egmond-3b9118201/"
+							target="_blank"
+							>LinkedIn</a
+						>
+					</li>
+					<li>
+						<p>philip.vegmond@gmail.com</p>
+					</li>
+					<li>
+						<p>06 371 488 48</p>
+					</li>
+				</ul>
 			</div>
-			<img src="images/jacob.jpg" />
-			<a href="https://philipvegmond.github.io/Frontend-Website/" target="_blank"></a>
-		</section>
+		</footer>
 
-		<section>
-			<img src="images/shhht.jpg" />
-			<div>
-				<h2>Shhht</h2>
-				<p>
-					An effort to solve sound polution in Amsterdam's city centre using digital advertisement
-					boards.<br />
-					<br />
-					An audio-reactive particle system using Canvas and Web Audio API.
-				</p>
-			</div>
-			<a href="shhht/index.html" target="_blank"></a>
-		</section>
-
-
-
-		<section>
-			<div>
-				<h2>Escape Room</h2>
-				<p>
-					A digital escape room. Collect items and solve puzzles to escape the
-					temple you got stuck exploring! <br />
-					<br />
-					My first Javascript based school project.
-				</p>
-			</div>
-			<img src="images/horus.jpg" />
-			<a href="https://oege.ie.hva.nl/~egmondp/Escape_Room_Update/" target="_blank"></a>
-		</section>
-
-
-	</main>
-
-	<footer>
-		<div>
-			<h2 class="foot">Contact</h2>
-		</div>
-		<div>
-			<ul>
-				<li>
-					<a href="https://www.linkedin.com/in/philip-van-egmond-3b9118201/" target="_blank">LinkedIn</a>
-				</li>
-				<li>
-					<p>philip.vegmond@gmail.com</p>
-				</li>
-				<li>
-					<p>06 371 488 48</p>
-				</li>
-			</ul>
-		</div>
-	</footer>
-
-	<script src="scripts/script.js"></script>
-</body>
-
+		<script src="scripts/script.js"></script>
+	</body>
 </html>
