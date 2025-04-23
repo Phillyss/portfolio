@@ -244,6 +244,16 @@ footer p {
 	height: 100%;
 }
 
+.projects .figmaLink {
+	position: initial;
+	text-decoration: underline;
+}
+
+.projects .figmaLink:hover {
+	color: rgb(30, 30, 30);
+	text-decoration-color: white;
+}
+
 .projects section:first-of-type {
 	margin-top: 50px;
 }
