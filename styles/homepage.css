@@ -1,0 +1,44 @@
+body {
+	perspective: 1000px;
+}
+
+/* --- Homepage --- */
+#homepage h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	letter-spacing: 0.15em;
+	margin-top: 0;
+	pointer-events: none;
+}
+
+#homepage h2 {
+	max-width: 800px;
+	margin: auto auto;
+}
+
+#homepage div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 90vh;
+}
+
+#homepage img {
+	width: 40%;
+	user-select: none;
+}
+
+#homepage section {
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 0;
+	display: block;
+}
+
+#homepage section + section {
+	margin-top: 15vh;
+	margin-bottom: 35vh;
+}
