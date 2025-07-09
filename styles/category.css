@@ -16,6 +16,15 @@ main a {
 	height: 100%;
 }
 
+main span {
+	text-decoration: underline;
+}
+main span span {
+	text-decoration: none;
+	font-weight: 900;
+	font-size: 30px;
+}
+
 .figmaLink {
 	position: initial;
 	text-decoration: underline;
