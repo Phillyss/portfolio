@@ -3,14 +3,10 @@ var container = document.querySelector("#homepage div");
 var img = document.querySelector("#homepage img");
 
 function animateImg(e) {
-	// let xAxis = (window.innerWidth / 2 - e.pageX) / -95;
-	// let yAxis = (window.innerHeight / 2 - e.pageY) / 65;
-	// let transX = (window.innerWidth / 2 - e.pageX) / 20;
-	// let transY = (window.innerHeight / 2 - e.pageY) / 20;
-	let xAxis = (window.innerWidth / 2 - e.pageX) / -22;
-	let yAxis = (window.innerHeight / 2 - e.pageY) / 22;
-	let transX = (window.innerWidth / 2 - e.pageX) / 5;
-	let transY = (window.innerHeight / 2 - e.pageY) / 5;
+	let xAxis = clamp(-42, (window.innerWidth / 2 - e.pageX) / -22, 42);
+	let yAxis = clamp(-14, (window.innerHeight / 2 - e.pageY) / 22, 14);
+	let transX = clamp(-180, (window.innerWidth / 2 - e.pageX) / 5, 180);
+	let transY = clamp(-50, (window.innerHeight / 2 - e.pageY) / 5, 50);
 	img.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg) translate(${transX}px, ${transY}px)`;
 }
 
@@ -23,6 +19,10 @@ function resetImg() {
 // Takes away transition while animating
 function takeTransition() {
 	img.style.transition = "none";
+}
+
+function clamp(min, num, max) {
+	return Math.min(Math.max(num, min), max);
 }
 
 // Footer animation
