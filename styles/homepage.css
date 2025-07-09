@@ -10,11 +10,12 @@ h1 {
 	letter-spacing: 0.15em;
 	margin-top: 0;
 	pointer-events: none;
+	font-size: min(9.09vw, 50px);
 }
 
 h2 {
-	max-width: 800px;
 	margin: auto auto;
+	font-size: min(5.25vw, 42px);
 }
 
 #homepage div {
@@ -27,7 +28,7 @@ h2 {
 }
 
 img {
-	width: 40%;
+	width: 90%;
 	max-width: 625px;
 	user-select: none;
 }
@@ -42,4 +43,8 @@ section {
 section + section {
 	margin-top: 15vh;
 	margin-bottom: 35vh;
+}
+
+main p {
+	font-size: min(2.75vw, 22px);
 }

@@ -40,7 +40,9 @@ window.onscroll = function (ev) {
 	}
 };
 
-// Homepage
-container.addEventListener("mousemove", animateImg);
-container.addEventListener("mouseleave", resetImg);
-container.addEventListener("mouseenter", takeTransition);
+// set footer animation on desktop
+if (!window.matchMedia("(any-hover:none)").matches) {
+	container.addEventListener("mousemove", animateImg);
+	container.addEventListener("mouseleave", resetImg);
+	container.addEventListener("mouseenter", takeTransition);
+}
